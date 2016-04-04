@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ListenAudioPostTagCardActivity"
+    tools:showIn="@layout/activity_test_position">
+
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        >
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            >
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:elevation="100dp"
+                card_view:cardBackgroundColor="@color/cardview_initial_background"
+                card_view:cardCornerRadius="8dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                >
+
+                <TextView
+
+                    android:id="@+id/audioTitleOrName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+
+                    android:layout_marginLeft="6dp"
+
+                    android:paddingLeft="2dp"
+
+                    android:textColor="#000000"
+
+                    android:textStyle="bold" />
+
+
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardview2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:elevation="100dp"
+                card_view:cardBackgroundColor="@color/cardview_initial_background"
+                card_view:cardCornerRadius="8dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                >
+
+
+
+                <TextView
+                    android:layout_marginTop="2dp"
+                    android:id="@+id/audioUrl"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_alignLeft="@+id/audioTitleOrName"
+                    android:layout_below="@+id/audioTitleOrName"
+                    android:paddingLeft="2dp"
+
+                    android:textColor="#000"
+
+                    android:textStyle="bold" />
+
+
+            </android.support.v7.widget.CardView>
+            <com.ns.developer.tagview.widget.TagCloudLinkView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/test"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="0dp"
+                android:background="#ffffff"
+                app:isDeletable="false"
+                app:tagLayoutColor="#727272"
+                app:tagTextSize="6sp"
+                app:tagTextColor="#ffffff"
+                android:layout_below="@+id/audioUrl"
+
+                />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_large"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text=" Download"
+                    />
+                <SeekBar
+                    android:id="@+id/downLoadSeekBar"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+
+                    android:visibility="visible"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Play"
+                    />
+                <SeekBar
+                    android:id="@+id/seek_bar"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+
+
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

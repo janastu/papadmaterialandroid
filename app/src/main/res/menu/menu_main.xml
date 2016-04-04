@@ -1,0 +1,53 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="annotationapp.janastu.org.papadapp.ListenAudioPostTagCardActivity">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+
+
+
+    <item
+        android:id="@+id/miPause"
+        android:icon="@drawable/button_pause"
+        app:showAsAction="always"
+
+        android:title="Pause">
+    </item>
+
+    <item
+        android:id="@+id/miPlay"
+        android:icon="@drawable/play_button"
+        app:showAsAction="always"
+
+        android:title="Pause">
+    </item>
+
+    <item
+        android:id="@+id/miDownload"
+        android:icon="@drawable/download_icon"
+        app:showAsAction="always"
+
+        android:title="Download">
+    </item>
+
+
+    <item
+        android:id="@+id/miLike"
+        android:icon="@drawable/buttonlike"
+        app:showAsAction="always"
+
+        android:title="Like">
+    </item>
+
+    <item
+        android:id="@+id/miDisLike"
+        android:icon="@drawable/buttondislike"
+        app:showAsAction="always"
+
+        android:title="Dislike">
+    </item>
+</menu>

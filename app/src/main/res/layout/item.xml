@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="3dp">
+
+    <com.andexert.library.RippleView
+        android:id="@+id/more"
+        rv_centered="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:rv_color="#ff80d4ef">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffecb3">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+
+
+
+
+
+                <com.plumillonforge.android.chipview.ChipView
+                    android:id="@+id/annotationfile_tags"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/annotationfile_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="1dip"
+                    android:paddingLeft="2dip"
+                    android:textColor="#333"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="2dip"
+                    android:layout_marginRight="2dip"
+                    android:layout_alignParentLeft="true"/>
+
+
+
+                <TextView android:id="@+id/annotationfile_uploadDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center"
+                    android:textColor="#333"
+                    android:paddingTop="5dip"
+                    android:shadowColor="@android:color/white"
+                    android:textSize="12sp"
+                    android:padding="3dip"
+                    android:layout_marginRight="3dip"/>
+
+<!--
+                <ImageButton
+                    android:id="@+id/tagButton1"
+
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+
+                    android:layout_alignParentRight="true"
+                    android:contentDescription="TestPlayPause"
+                    android:onClick="onClick"
+                    android:src="@drawable/play_button"
+                    />
+                    -->
+
+                <Button           android:id="@+id/tagButton"
+                    android:layout_width="80dp"
+                    android:layout_height="38dp"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="10dp"
+                    android:text=" Play   "
+                    android:textColor="#fff"
+                    android:textSize="13dp"
+                    android:background="#eb543b"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </com.andexert.library.RippleView>
+
+</LinearLayout>
